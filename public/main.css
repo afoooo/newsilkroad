@@ -1,0 +1,7 @@
+ul {
+	list-style: none;
+	display: block;
+	float: left;
+	font-family: Arial, serif;
+	font-size: 20px;
+}
