@@ -1,7 +1,15 @@
-<link rel="stylesheet" type="text/css" href="main.css">
-
-<% ["home", "about", "shop", "contact"].each do |name| %>
-	<ul>
-		<li><%= name %></li>	
-	</ul>
-<% end %>
+<html>
+<head>
+	<title>ur-buds</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="navbar">
+		<% %w(home about shop contact).each do |name| %>
+			<ul>
+				<li><%= name %></li>	
+			</ul>
+		<% end %>
+	</div>
+</body>
+</html>

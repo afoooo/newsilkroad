@@ -1,7 +1,15 @@
-ul {
+
+.navbar {
+	background-color: #000;
+}
+
+.navbar > ul {
 	list-style: none;
-	display: block;
-	float: left;
 	font-family: Arial, serif;
 	font-size: 20px;
+	color: #6ada8e;
+}
+
+.navbar li {
+	display: inline-block;
 }
