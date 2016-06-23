@@ -1,15 +1,22 @@
-
-.navbar {
-	background-color: #000;
+.header {
+	width: 100%;
+	margin: 0;
 }
 
-.navbar > ul {
+.header > .navbar {
+	background-color:;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.header > .navbar > ul {
 	list-style: none;
 	font-family: Arial, serif;
 	font-size: 20px;
 	color: #6ada8e;
 }
 
-.navbar li {
+.header > .navbar > li {
 	display: inline-block;
 }
