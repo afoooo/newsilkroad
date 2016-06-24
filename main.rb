@@ -16,6 +16,6 @@ get '/shop' do
 	erb :shop
 end
 
-get '/contact' do
-	erb :contact
+get '/form' do
+	erb :form
 end
