@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-.navbar {
-	background-color: #000;
-=======
 .header {
 	width: 100%;
 	margin: 0;
@@ -12,7 +8,6 @@
 	width: 100%;
 	margin: 0;
 	padding: 0;
->>>>>>> c82b2a44816cb9f97a5efcc1e1439001179f7db1
 }
 
 .header > .navbar > ul {
