@@ -1,5 +1,15 @@
 $(document).ready(function(){
-	$('#modal-link').click(function(){
+	$('#shop_light').click(function(){
+		$('#modal-bg').show(500)
+		$('#modal').fadeIn(1500)
+	})
+
+	$('#shop_bold').click(function(){
+		$('#modal-bg').show(500)
+		$('#modal').fadeIn(1500)
+	})
+
+	$('#shop_heavy').click(function(){
 		$('#modal-bg').show(500)
 		$('#modal').fadeIn(1500)
 	})
