@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>adventure-box</title>
+	<title>not-tryna-quit</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<div class="header">
-		<div class="navbar">
-			<% %w(home about shop contact).each do |name| %>
-				<ul>
-					<li><%= name %></li>	
-				</ul>
-			<% end %>
-		</div>
-	</div>
+
+	<header>
+		<a href="/">
+			<div id="logo">	
+				<span id="s1">NOT</span>
+				<span id="s2">TRYNA</span>
+				<span id="s3">QUIT</span>
+			</div>
+		</a>
+			<nav>
+				<a href="/">Home</a>
+				<a href="/product">Product</a>
+				<a href="/form">Form</a>
+				<a href="/about">About</a>
+			</nav>
+	</header>
 
 	<%= yield %>
 
