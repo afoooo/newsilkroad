@@ -1,17 +1,17 @@
 require "sinatra"
 
-get '/home' do
-	erb :home
+get '/layout' do
+	erb :layout
 end
 
 get '/about' do
-	erb :home
+	erb :about
 end
 
 get '/shop' do
-	erb :home
+	erb :shop
 end
 
 get '/contact' do
-	erb :home
+	erb :contact
 end
