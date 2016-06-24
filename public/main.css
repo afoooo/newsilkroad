@@ -9,67 +9,64 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
-}
-
-header{
-	width: 100%;
-	height: 120px;
-	margin: 0px 50%  0px 0px;
-	border-bottom: .5px #ccc solid;
-	margin: 0;
-}
-
-a{
-	text-decoration: none;
-	color: #000;
-	font-size: 35pt;
-	font-weight: lighter;
-	margin-left: 70px;
-	font-weight: bold;
+	font-family: Helvetica;
 }
 
 nav {
-	width: 90%;
-	margin: 0;
-	padding: 0px;
+  background-color: rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 100%;
+  line-height: 50px;
+  height: 50px;
 }
 
-#logo{
-	width: 300px;
-	height: 80px;
-	padding-top: 30px;
-	padding-left: 30px;
-	float: left;
+nav h1 {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  font-size: 20px;
 }
 
-#s1{
-	color: #848484;
-	font-weight:bold;
-	font-size: 30px;
-	float: left;
+nav ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
 }
 
-#s2{
-	font-weight: bold;
-	font-size: 20px;
-	float: left;
-	margin-left: 20px;
+nav li {
+  position: relative;
+  display: inline-block;
+  list-style: none;
 }
 
-#s3{
-	color: #848484;
-	font-weight: bold;
-	font-size: 50px;
-	margin-left: 40px;
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0 15px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: aliceblue;
 }
 
 #text{
-	border: solid;
-	width: 45%;
-	height: 400px;
-	margin: 0 auto;
-	margin-top: 60px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	font-size: 12px;
+	width: 500px;
+	height: 500px;
+	padding: 0;
+	background-color: rgba(0,0,0,0.05);
 }
 
 #toptext{
@@ -81,6 +78,15 @@ nav {
 
 
 #NTQ{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 480px;
+	width: 480px;
+	margin: auto;
+	padding: 0;
 	text-align: center;
 	opacity: 0.5;
 }
@@ -98,7 +104,29 @@ nav {
 }
 
 #aboutpagetext{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 500px;
+	width: 500px;
+	margin: auto;
 	font-size: 100px;
+	background-color: rgba(0,0,0,0.05);
+}
+
+#aboutBox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 400px;
+	width: 400px;
+	margin: auto;
+	font-size: 3em;
+	text-align: center;
 }
 
 
@@ -109,6 +137,7 @@ nav {
 }
 
 #shop_h1 {
+	margin-top: 100px;
 	text-align: center;
 	margin-bottom: 0;
 	padding-bottom: 3%;
@@ -285,9 +314,88 @@ nav {
 }
 
 
+/*adding forms+success page styling*/
+#form, #confBox {
+	position: absolute;
+	background-color: rgba(0,0,0,0.05);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 500px;
+	width: 500px;
+	margin: auto;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
+#confBox h1 {
+	text-align: center;
+}
+
+#confBox_content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 400px;
+	width: 400px;
+	margin: auto;
+}
+
+#confBox p {
+	padding: 5px;
+	text-align: center;
+}
+
+form {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0;
+	bottom: 0;
+	height: 450px;
+	width: 450px;
+	margin: auto;
+	padding: 0;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+#form p {
+	padding: 0;
+	margin: 10px;
+	margin-top: 11px;
+}
+
+#form p input, #bundle_input {
+	position: absolute;
+	left: 180px;
+	font-size: 14px;
+	padding: 0;
+}
+
+#bundle_input < input {
+	border-style: solid;
+	border-width: 2px;
+}
 
 
+#submitButton {
+	position: absolute;
+	left: 0;
+	top: 425px
+}
 
-
-
-
+form #sb_btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	font-size: 14px
+}

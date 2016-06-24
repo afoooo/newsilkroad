@@ -16,6 +16,10 @@ get '/form' do
 	erb :form
 end
 
+get '/success' do
+	erb :success
+end
+
 get '/about' do
 	erb :about
 end
