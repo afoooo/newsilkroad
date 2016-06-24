@@ -1,22 +1,103 @@
-.header {
-	width: 100%;
-	margin: 0;
+/*GLOBAL SETTINGS*/
+
+*{
+	margin: 0px;
+	padding: 0px;
 }
 
-.header > .navbar {
-	background-color:;
+body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	font-family: sans-serif;
 }
 
-.header > .navbar > ul {
-	list-style: none;
-	font-family: Arial, serif;
+header{
+	width: 100%;
+	height: 120px;
+	margin: 0px 50%  0px 0px;
+	border-bottom: .5px #ccc solid;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+	font-size: 35pt;
+	font-weight: lighter;
+	margin-left: 70px;
+	font-weight: bold;
+}
+
+nav {
+	width: 90%;
+	margin: 0;
+	padding: 0px;
+}
+
+#logo{
+	width: 300px;
+	height: 80px;
+	/*background-color: #cc0000;*/
+	padding-top: 30px;
+	padding-left: 30px;
+	float: left;
+}
+
+#s1{
+	color: #848484;
+	font-weight:bold;
+	font-size: 30px;
+	float: left;
+}
+
+#s2{
+	font-weight: bold;
 	font-size: 20px;
-	color: #6ada8e;
+	float: left;
+	margin-left: 20px;
 }
 
-.header > .navbar > li {
-	display: inline-block;
+#s3{
+	color: #848484;
+	font-weight: bold;
+	font-size: 50px;
+	margin-left: 40px;
 }
+
+#text{
+	border: solid;
+	width: 45%;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+#toptext{
+	width: 45%;
+	height: 0px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+
+#NTQ{
+	text-align: center;
+	opacity: 0.5;
+}
+
+#h1id{
+	color:green;
+	text-align: center;
+}
+
+#companyinfo{
+	width: 90%;
+	height: 0px;
+	margin-left: 300px;
+	margin-top: 50px;
+}
+
+#aboutpagetext{
+	font-size: 100px;
+}
+
