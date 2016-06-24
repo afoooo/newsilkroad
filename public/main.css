@@ -66,12 +66,13 @@ p {
 
 #shop_h1 {
 	text-align: center;
+	margin-bottom: 0;
 	padding-bottom: 3%;
 	border-bottom: 2px #f0f0f0 solid;
 }
 
 #shop_light {
-	margin: 5% auto;
+	margin: 12% auto;
 }
 
 #shop_light_text {
@@ -81,8 +82,13 @@ p {
 	text-align: center;
 }
 
+#shop_light_text:hover {
+	font-size: 50px;
+	text-decoration: underline;
+}
+
 #shop_bold {
-	margin: 5% auto;
+	margin: 12% auto;
 }
 
 #shop_bold_text {
@@ -92,8 +98,13 @@ p {
 	text-align: center;
 }
 
+#shop_bold_text:hover {
+	font-size: 50px;
+	text-decoration: underline;
+}
+
 #shop_heavy {
-	margin: 5% auto;
+	margin: 12% auto;
 }
 
 #shop_heavy_text {
@@ -102,13 +113,121 @@ p {
 	text-align: center;
 }
 
+#shop_heavy_text:hover {
+	font-size: 50px;
+	text-decoration: underline;
+}
+
 .shop_p {
 	text-align: center;
 }
 
-.shop_img {
-
+.shop-modal-bg {
+	position: fixed;
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: .5;
+	display: none;
 }
+
+.shop-modal-header {
+	text-align: right;
+	padding: 20px;
+	margin-bottom: 80px;
+}
+
+.shop-modal-header > a {
+	text-decoration: none;
+	font-size: 30px;
+	padding-bottom: 5px;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	color: #aaa;
+}
+
+.shop-modal-header > a:hover {
+	font-weight: bolder
+}
+
+#shop-light-modal {
+	position: fixed;
+	background-color: #f0f0f0;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 10% auto;
+	width: 700px;
+	height: 400px;
+	display: none;
+	z-index: 5;
+	padding-left: 5%;
+}
+
+#shop-light-modal > p {
+	font-family: Arial, sans-serif;
+	font-size: 26px;
+	color: #000;
+	letter-spacing: 2px;
+	margin: 0 20px;
+}
+
+#shop-bold-modal {
+	position: fixed;
+	background-color: #f0f0f0;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 10% auto;
+	width: 700px;
+	height: 400px;
+	display: none;
+	z-index: 5;
+	padding-left: 5%;
+}
+
+#shop-bold-modal > p {
+	font-family: Arial, sans-serif;
+	font-size: 26px;
+	color: #000;
+	letter-spacing: 2px;
+	margin: 0 20px;
+}
+
+#shop-heavy-modal {
+	position: fixed;
+	background-color: #f0f0f0;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 10% auto;
+	width: 700px;
+	height: 400px;
+	display: none;
+	z-index: 5;
+	padding-left: 5%;
+}
+
+#shop-heavy-modal > p {
+	font-family: Arial, sans-serif;
+	font-size: 26px;
+	color: #000;
+	letter-spacing: 2px;
+	margin: 0 20px;
+}
+
+
+
+
+
+
+
+
 
 
 
