@@ -294,6 +294,27 @@ li a:hover {
 	margin: 0 20px;
 }
 
+.shop-button {
+	margin-left: 70%;
+}
+
+.shop-button > a {
+	text-decoration: none;
+	color: #f0f0f0;
+	background-color: #888;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+	font-weight: lighter;
+	font-size: 26px;
+	padding: 16px;
+}
+
+.shop-button > a:hover {
+	font-weight: bolder;
+	background-color: #fff;
+	color: #000;
+}
+
 /*GRID LAYOUT*/
 .col-1 {
     width: 90%;
