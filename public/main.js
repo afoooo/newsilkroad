@@ -22,9 +22,14 @@ $(document).ready(function(){
 	})
 
 	$('.close-button').click(function(){
+		event.preventDefault()
 		$('.shop-modal-bg').fadeOut(2000)
 		$('#shop-light-modal').fadeOut(1000)
 		$('#shop-bold-modal').fadeOut(1000)
 		$('#shop-heavy-modal').fadeOut(1000)
+	})
+
+	$("#contactSubmit").click(function() {
+		alert("Your message has been sent!")
 	})
 })

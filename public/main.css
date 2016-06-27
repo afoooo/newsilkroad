@@ -1,15 +1,26 @@
 /*GLOBAL SETTINGS*/
 
-*{
+/**{
 	margin: 0px;
 	padding: 0px;
-}
+}*/
 
 body {
 	width: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: Helvetica;
+	font-family: sans-serif;
+	/*background: linear-gradient(#fff, #999);*/
+}
+
+h1 {
+	font-size: 65px;
+}
+
+p {
+	font-size: 26px;
+	font-weight: lighter;
 }
 
 nav {
@@ -19,22 +30,25 @@ nav {
   left: 0px;
   z-index: 2;
   width: 100%;
-  line-height: 50px;
-  height: 50px;
+  line-height: 60px;
+  height: 60px;
 }
 
 nav h1 {
   position: absolute;
   top: 0;
   left: 2%;
-  font-size: 20px;
+  font-size: 28px;
+  margin: 0;
+  font-family: "Trebuchet MS";
 }
 
 nav ul {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 2%;
   font-size: 20px;
+  margin: 0;
 }
 
 nav li {
@@ -43,57 +57,105 @@ nav li {
   list-style: none;
 }
 
-li a {
+nav li a {
   display: block;
-  color: black;
+  color: #fff;
   text-align: center;
   padding: 0 15px;
   text-decoration: none;
+  font-family: "Lucida Sans Unicode";
 }
 
-li a:hover {
-  background-color: aliceblue;
+nav li #GS:hover {
+	background-color: #f0f0f0;
 }
+
+nav li a:hover {
+  /*background-color: #fafafa;*/
+  color: #888;
+}
+
+/*GRID LAYOUT*/
+.col-1 {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.col-2 {
+    width: 48%;
+    height: 100%;
+    margin-left: 1%;
+    display: inline-block;
+}
+.col-3 {
+    width: 30%;
+    height: 100%;
+    margin-left: 2.25%;
+    display: inline-block;
+}
+
+
+/*HOME PAGE*/
 
 #text{
-	position: absolute;
-	top: 0;
+	/*position: absolute;
+	top: 0%;
 	right: 0;
 	bottom: 0;
-	left: 0;
-	margin: auto;
-	font-size: 12px;
-	width: 500px;
-	height: 500px;
+	left: 0;*/
+	margin: 200px auto;
+	/*font-size: 12px;*/
+	width: 75%;
+	height:	100%;
 	padding: 0;
-	background-color: rgba(0,0,0,0.05);
+	/*background-color: rgba(0,0,0,0.05);*/
+	background: linear-gradient(#fff, #999);
+	border: 10px #888 solid;
 }
 
-#toptext{
+/*#toptext{
 	width: 45%;
 	height: 0px;
 	margin: 0 auto;
 	margin-top: 50px;
 }
-
+*/
 
 #NTQ{
-	position: absolute;
-	top: 0;
+	/*position: absolute;
+	top: 0%;
 	right: 0;
 	bottom: 0;
-	left: 0;
-	height: 480px;
-	width: 480px;
-	margin: auto;
-	padding: 0;
+	left: 0;*/
+	/*height: 80%;
+	width: 90%;*/
+	margin: 0 auto;
+	padding: 10px;
 	text-align: center;
 	opacity: 0.5;
+	font-size: 26px;
 }
 
-#h1id{
-	color:green;
+#NTQ p a {
+	text-decoration: none;
+	color: #000;
+	opacity: 1;
+	font-weight: bold;
+}
+
+#NTQ p a:hover {
+	text-decoration: none;
+	color: #888;
+}
+
+/*ABOUT PAGE*/
+
+.about_h1 {
+	margin-top: 100px;
 	text-align: center;
+	margin-bottom: 0;
+	padding-bottom: 3%;
+	border-bottom: 2px #f0f0f0 solid;
 }
 
 #companyinfo{
@@ -103,8 +165,8 @@ li a:hover {
 	margin-top: 50px;
 }
 
-#aboutpagetext{
-	position: absolute;
+#aboutpagetext {
+	/*position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -112,8 +174,20 @@ li a:hover {
 	height: 500px;
 	width: 500px;
 	margin: auto;
-	font-size: 100px;
-	background-color: rgba(0,0,0,0.05);
+	font-size: 100px;*/
+	width: 70%;
+	text-align: justify;
+	letter-spacing: 2px;
+	/*background-color: rgba(0,0,0,0.05);*/
+}
+
+.aboutBox_h1 {
+	text-align: center;
+	font-size: 50px;
+}
+
+.aboutBox_p {
+	text-align: center;
 }
 
 #aboutBox {
@@ -129,11 +203,29 @@ li a:hover {
 	text-align: center;
 }
 
+.aboutImg {
+	margin-left: 10%;
+	border: 2px #000 solid;
+}
 
-/*SHOP PAGE CODE*/
+.contactus {
+	margin-left: 38%;
+	font-size: 26px;
+	color: #FF3030;
+	border: none;
+	border-bottom: 3px #000 solid;
+}
+
+.contactusButt {
+	margin: 5% 0;
+	margin-left: 48%;
+}
+
+/*PRODUCT PAGE*/
 
 .shop_img {
 	box-shadow: 0 10px 10px 0 #888888, 0 10px 25px 0 #888888;
+	border: 2px #aaa solid;
 }
 
 #shop_h1 {
@@ -181,7 +273,7 @@ li a:hover {
 }
 
 #shop_heavy_text {
-	font-weight: bolder;
+	font-weight: bold;
 	font-size: 45px;
 	text-align: center;
 }
@@ -209,7 +301,7 @@ li a:hover {
 .shop-modal-header {
 	text-align: right;
 	padding: 20px;
-	margin-bottom: 80px;
+	margin-bottom: 20px;
 }
 
 .shop-modal-header > a {
@@ -315,63 +407,72 @@ li a:hover {
 	color: #000;
 }
 
-/*GRID LAYOUT*/
-.col-1 {
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
-}
-.col-2 {
-    width: 48%;
-    height: 100%;
-    margin-left: 1%;
-    display: inline-block;
-}
-.col-3 {
-    width: 30%;
-    height: 100%;
-    margin-left: 2.25%;
-    display: inline-block;
-}
-
-
+/*FORM PAGE*/
 /*adding forms+success page styling*/
-#form, #confBox {
-	position: absolute;
-	background-color: rgba(0,0,0,0.05);
-	top: 0;
+#form/*, #confBox */{
+	/*position: absolute;*/
+	/*background-color: rgba(0,0,0,0.05);*/
+	background: linear-gradient(#fff, #999);
+	/*top: 0;
 	right: 0;
 	bottom: 0;
-	left: 0;
-	height: 500px;
-	width: 500px;
-	margin: auto;
+	left: 0;*/
+	height: 90%;
+	/*width: 50%;*/
+	width: 70%;
+	margin: 200px auto;
 	font-family: sans-serif;
 	font-size: 18px;
+	padding-top: 20px;
+	padding-bottom: 100px;
+	border: 2px #B6AFA9 solid;
+}
+
+#confBox {
+	height: 100%;
+	width: 100%;
+	position: fixed;
 }
 
 #confBox h1 {
 	text-align: center;
+	color: #f0f0f0;
 }
 
 #confBox_content {
-	position: absolute;
+	background: url("/images/girl.jpg") center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: fixed;
+	opacity: .5;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	height: 400px;
-	width: 400px;
-	margin: auto;
+	height: 64%;
+	width: 50%;
+	margin: 100px auto;
 }
 
 #confBox p {
 	padding: 5px;
 	text-align: center;
+	color: #000;
 }
 
+#confBox a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+#confBox a:hover {
+	color: #B22222;
+}
+
+
 form {
-	position: absolute;
+	/*position: absolute;
 	top: 0px;
 	left: 0px;
 	right: 0;
@@ -381,19 +482,20 @@ form {
 	margin: auto;
 	padding: 0;
 	margin-left: 10px;
-	margin-top: 5px;
+	margin-top: 5px;*/
 }
 
 #form p {
-	padding: 0;
+	padding-left: 120px;
+	padding-top: 30px;
 	margin: 10px;
-	margin-top: 11px;
+	/*margin-top: 11px;*/
 }
 
 #form p input, #bundle_input {
 	position: absolute;
 	left: 180px;
-	font-size: 14px;
+	font-size: 20px;
 	padding: 0;
 }
 
@@ -404,19 +506,30 @@ form {
 
 
 #submitButton {
-	position: absolute;
-	left: 0;
-	top: 425px
+	/*position: absolute;
+	left: 20%;
+	top: 425px;*/
 }
 
 form #sb_btn {
-	position: absolute;
+	/*position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	margin: 0 auto;
 	width: 100px;
-	height: 100px;
-	font-size: 14px
+	height: 100px;*/
+	font-size: 26px;
+	margin-left: 30%;
+	margin-top: 50px;
 }
+
+.left {
+	margin-left: 40%;
+	border: none;
+	color: #FF3030;	
+}
+
+
+
